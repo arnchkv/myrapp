@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task: MyString
+  day: 1
+  student: one
+
+two:
+  task: MyString
+  day: 1
+  student: two
