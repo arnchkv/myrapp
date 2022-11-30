@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_29_100259) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_30_052406) do
   create_table "students", force: :cascade do |t|
     t.integer "roll"
     t.string "name"
-    t.integer "class"
+    t.integer "student_class"
     t.string "remarks"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
