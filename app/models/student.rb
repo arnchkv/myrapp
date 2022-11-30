@@ -1,3 +1,3 @@
 class Student < ApplicationRecord
-	has_many :students, dependent: :destroy
+	has_many :todos, dependent: :destroy
 end
