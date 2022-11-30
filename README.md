@@ -21,4 +21,5 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* notes:
+	- A model can't have "class" as a column name.
