@@ -19,14 +19,16 @@
     <%= student.remarks %>
   </p>
 
-<!--   <p>
-    <strong>Task:</strong>
-    <%#= student.todos.task %>
-  </p>
+  <% student.todos.each do |todo| %>
+    <p>
+      <strong>Task:</strong>
+      <%= todo.task %>
+    </p>
 
-  <p>
-    <strong>Day:</strong>
-    <%#= student.todos.day %>
-  </p> -->
+    <p>
+      <strong>Day:</strong>
+      <%= todo.day %>
+    </p>
+  <% end %>
 
 </div>
