@@ -3,12 +3,19 @@
 <h1>Test</h1>
 
 <div id="students">
-  <% @students.each do |student| %>
-    <%= render student %>
-    <p>
-      <%= link_to "Show this student", student %>
-    </p>
-  <% end %>
+  <table>
+    <% @students.each do |student| %>
+    <tr>
+        <%= render student %>
+      <td>
+        <p>
+          <%= link_to "Show this student", student %>
+        </p>
+      </td>
+    </tr>
+
+    <% end %>  
+  </table>
 </div>
 
 <%= link_to "New student", new_student_path %>

@@ -1,34 +1,44 @@
 <div id="<%= dom_id student %>">
-  <p>
-    <strong>Roll:</strong>
-    <%= student.roll %>
-  </p>
-
-  <p>
-    <strong>Name:</strong>
-    <%= student.name %>
-  </p>
-
-  <p>
-    <strong>Class:</strong>
-    <%= student.student_class %>
-  </p>
-
-  <p>
-    <strong>Remarks:</strong>
-    <%= student.remarks %>
-  </p>
-
-  <% student.todos.each do |todo| %>
+  <td>
     <p>
-      <strong>Task:</strong>
-      <%= todo.task %>
+      <strong>Roll:</strong>
+      <%= student.roll %>
     </p>
+  </td>
 
+  <td>
     <p>
-      <strong>Day:</strong>
-      <%= todo.day %>
+      <strong>Name:</strong>
+      <%= student.name %>
     </p>
-  <% end %>
+  </td>
+
+  <td>
+    <p>
+      <strong>Class:</strong>
+      <%= student.student_class %>
+    </p>
+  </td>
+
+  <td>
+    <p>
+      <strong>Remarks:</strong>
+      <%= student.remarks %>
+    </p>
+  </td>
+
+  <td>
+    <% student.todos.each do |todo| %>
+      <p>
+        <strong>Task:</strong>
+        <%= todo.task %>
+      </p>
+
+      <p>
+        <strong>Day:</strong>
+        <%= todo.day %>
+      </p>
+    <% end %>
+  </td>
 
 </div>
