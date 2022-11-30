@@ -13,6 +13,7 @@ class StudentsController < ApplicationController
   # GET /students/new
   def new
     @student = Student.new
+    @student.todos.build
   end
 
   # GET /students/1/edit
@@ -65,6 +66,7 @@ class StudentsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def student_params
-      params.require(:student).permit(:roll, :name, :class, :remarks)
+      params.require(:student).permit(:roll, :name, :student_class, :remarks,
+        todos_attributes: [:id, :task, :day])
     end
 end

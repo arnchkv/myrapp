@@ -32,6 +32,12 @@
   </div>
 
   <div>
+    <%= form.fields_for :todos do |todo| %>
+      <%= render 'todo_fields', form: todo %>
+    <% end %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
